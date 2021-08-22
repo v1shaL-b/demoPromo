@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KYC</title>
+    <title>Summery</title>
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
     <!--====== Slick CSS ======-->
@@ -28,7 +28,7 @@
 
     <section id="pricing" class="pricing-area ">
         <div class="row justify-content-center">
-            <h2> KYC </h2>
+            <h2> Summery </h2>
         </div>
         <br>
         <div class="container-fluid">
@@ -43,43 +43,15 @@
                 </div>
             </div>
             <hr>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <input type="file">
-                </div>
-            </div>
-            <hr>
-            <div class="row justify-content-center">
-                <div id="drop_zone" ondrop="dropHandler(event);">
-                    <p>Drag one or more files to this Drop Zone ...</p>
-                </div>
-            </div>
-            <hr>
+
         </div>
 
         <div class="row text-center">
-            <div class="col-md-3">
-                <label for="Opportunity / Corporate ID"> Opportunity / Corporate ID </label>
-                <input type="text" placeholder="Opportunity / Corporate ID">
-            </div>
 
-            <div class="col-md-3">
-                <label for="Type of Company"> Type of Company </label>
-                <input type="text" placeholder="Type of Company">
-            </div>
 
-            <div class="col-md-3">
-                <label for="">Name of the Company</label>
-                <input type="text" placeholder="Name of the Company">
-            </div>
 
-            <div class="col-md-3">
-                <label for="">CIN/LLPIN</label>
-                <input type="text" placeholder="CIN/LLPIN">
-            </div>
         </div>
-        <br>
-        <hr>
+
         <div class="row justify-content-center">
             <a href="promoter.html"> <button style="margin-right: 20px;" class="btn btn-warning"> Go Back </button> </a>
             <button class="btn btn-info">Submit</button>
@@ -89,29 +61,6 @@
 
 </body>
 
-<script>
-    function dropHandler(ev) {
-        console.log('File(s) dropped');
 
-        // Prevent default behavior (Prevent file from being opened)
-        ev.preventDefault();
-
-        if (ev.dataTransfer.items) {
-            // Use DataTransferItemList interface to access the file(s)
-            for (var i = 0; i < ev.dataTransfer.items.length; i++) {
-                // If dropped items aren't files, reject them
-                if (ev.dataTransfer.items[i].kind === 'file') {
-                    var file = ev.dataTransfer.items[i].getAsFile();
-                    console.log('... file[' + i + '].name = ' + file.name);
-                }
-            }
-        } else {
-            // Use DataTransfer interface to access the file(s)
-            for (var i = 0; i < ev.dataTransfer.files.length; i++) {
-                console.log('... file[' + i + '].name = ' + ev.dataTransfer.files[i].name);
-            }
-        }
-    }
-</script>
 
 </html>
