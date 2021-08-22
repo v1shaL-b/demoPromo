@@ -1,15 +1,11 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<html>
 
 <head>
-    <title>Product Listing</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-
-    <!-- <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png"> -->
-
-    <!--====== Magnific Popup CSS ======-->
+    <title>KYC</title>
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
     <!--====== Slick CSS ======-->
@@ -31,88 +27,248 @@
 <body>
 
     <section id="pricing" class="pricing-area ">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-10">
-                    <div class="section-title text-center pb-25">
-                        <h3 class="title">Product Listing</h3>
-                        <!-- <p class="text">Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed!</p> -->
-                    </div>
-                    <!-- section title -->
-                </div>
-            </div>
-            <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="pricing-style mt-30">
-                        <div class="pricing-icon text-center">
-                            <img src="assets/images/basic.svg" alt="">
-                        </div>
-                        <div class="pricing-header text-center">
-                            <h5 class="sub-title">Bike Loan</h5>
-                            <!-- <p class="month"><span class="price">$ 199</span>/month</p> -->
-                        </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li><i class="lni lni-check-mark-circle"></i> Carefully crafted components</li>
-                                <li><i class="lni lni-check-mark-circle"></i> Amazing page examples</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="promoter.html">GET STARTED</a>
-                        </div>
-                    </div>
-                    <!-- pricing style one -->
-                </div>
-
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="pricing-style mt-30">
-                        <div class="pricing-icon text-center">
-                            <img src="assets/images/pro.svg" alt="">
-                        </div>
-                        <div class="pricing-header text-center">
-                            <h5 class="sub-title">Car Loan</h5>
-                            <!-- <p class="month"><span class="price">$ 399</span>/month</p> -->
-                        </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li><i class="lni lni-check-mark-circle"></i> Carefully crafted components</li>
-                                <li><i class="lni lni-check-mark-circle"></i> Amazing page examples</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="promoter.html">GET STARTED</a>
-                        </div>
-                    </div>
-                    <!-- pricing style one -->
-                </div>
-
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="pricing-style mt-30">
-                        <div class="pricing-icon text-center">
-                            <img src="assets/images/enterprise.svg" alt="">
-                        </div>
-                        <div class="pricing-header text-center">
-                            <h5 class="sub-title">Business Loan</h5>
-                            <!-- <p class="month"><span class="price">$ 699</span>/month</p> -->
-                        </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li><i class="lni lni-check-mark-circle"></i> Carefully crafted components</li>
-                                <li><i class="lni lni-check-mark-circle"></i> Amazing page examples</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="promoter.html">GET STARTED</a>
-                        </div>
-                    </div>
-                    <!-- pricing style one -->
-                </div>
-            </div>
-            <!-- row -->
+        <div class="row justify-content-center">
+            <h2> KYC </h2>
         </div>
-        <!-- container -->
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="assets/images/promoter.png" alt="" width="200px" height="200px">
+                    <br><br>
+                </div>
+            </div>
+
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <input type="file">
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-center">
+                <div id="drop_zone" ondrop="dropHandler(event);">
+                    <p>Drag one or more files to this Drop Zone ...</p>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <label class="label" for="">Name of Applicant</label>
+                    <input type="text" placeholder="Name of Applicant">
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">PAN</label>
+                    <input type="text" placeholder="PAN">
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">DOB</label>
+                    <input type="text" placeholder="DOB">
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">Gender</label>
+                    <select class="label" placeholder="Gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <!-- <div class="col-md-12">
+                    <h2>Applicant Information</h2>
+                </div> -->
+                <div class="col-md-3">
+                    <label class="label" for="">Designation</label>
+
+                    <select class="label" name="" id="" placeholder="Designation">
+                        <option value="ceo">ceo</option>
+                        <option value="cfo">cfo</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">Start Date</label>
+                    <input type="text" placeholder="Start Date">
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">Experiance</label>
+                    <input type="text" placeholder="Experiance">
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">Desired Amount</label>
+                    <input type="text" placeholder="Desired Amount">
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <!-- <div class="col-md-3">
+                    <label class="label" for="">Bank</label>
+                    <select class="label" placeholder="Gender">
+                            <option value="bank1">Bank 1</option>
+                            <option value="bank2">Bank 2</option>
+                            <option value="bank3">Bank 3</option>
+                        </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">Purpose</label>
+
+                    <select class="label" name="" id="" placeholder="Purpose">
+                            <option value="ceo">Business</option>
+                            <option value="cfo">Farming</option>
+                        </select>
+                </div> -->
+                <div class="col-md-3">
+                    <label class="label" for="">Email</label>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">Mobile</label>
+                    <input type="text" placeholder="Mobile">
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">Avg. Monthly Expenses</label>
+                    <input type="text" placeholder="Avg. Monthly Expenses">
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">Avg. Monthly Expenses</label>
+                    <input type="text" placeholder="Avg. Monthly Expenses">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <label class="label" for="">Aadhar Number</label>
+                    <input type="text" placeholder="Aadhar Number">
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">Driving Lic. No.</label>
+                    <input type="text" placeholder="Driving Lic. No.">
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">Voters ID </label>
+                    <input type="text" placeholder="Voters ID ">
+                </div>
+                <div class="col-md-3">
+                    <label class="label" for="">Passport No.</label>
+                    <input type="text" placeholder="Passport No.">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <label class="label" for="">Employment Type</label>
+                    <input type="text" placeholder="Employment Type">
+                </div>
+
+                <div class="col-md-3">
+                    <label class="label" for="">Employment Status</label>
+                    <input type="text" placeholder="Employment Status">
+                </div>
+
+                <div class="col-md-3">
+                    <label class="label" for="">Employment Country</label>
+                    <input type="text" placeholder="Employment Country">
+                </div>
+
+                <div class="col-md-3">
+                    <label class="label" for="">Gross Annual Salary</label>
+                    <input type="text" placeholder="Gross Annual Salary">
+                </div>
+
+            </div>
+
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <label class="label" for="">Address</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Address"></textarea>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="col-md-1">
+                            <label class="label" for="">Dist</label>
+                            <input type="text" placeholder="Dist">
+                        </div>
+                        <div class="col-md-1">
+                            <label class="label" for="">City</label>
+                            <input type="text" placeholder="City">
+                        </div>
+                        <div class="col-md-1">
+                            <label class="label" for="">State</label>
+
+                            <select class="label" name="" id="" placeholder="State">
+                                <option value="ceo">Maharashta</option>
+                                <option value="cfo">Delhi</option>
+                                <option value="cfo">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">
+                            <label class="label" for="">Pin Code</label>
+                            <input type="text" placeholder="Pin Code">
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-3">
+                        <div class="col-md-1">
+                            <label class="label" for="">State</label>
+
+                            <select class="label" name="" id="" placeholder="State">
+                                <option value="ceo">Maharashta</option>
+                                <option value="cfo">Delhi</option>
+                                <option value="cfo">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-1">
+                            <label class="label" for="">Pin Code</label>
+                            <input type="text" placeholder="Pin Code">
+                        </div>
+
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+        <hr>
+
+        </div>
+        <div class="row justify-content-center">
+            <a href="loan-specification.html">
+                <button class="btn btn-info">Submit</button>
+            </a>
+        </div>
     </section>
+
+
 </body>
+
+<script>
+    function dropHandler(ev) {
+        console.log('File(s) dropped');
+
+        // Prevent default behavior (Prevent file from being opened)
+        ev.preventDefault();
+
+        if (ev.dataTransfer.items) {
+            // Use DataTransferItemList interface to access the file(s)
+            for (var i = 0; i < ev.dataTransfer.items.length; i++) {
+                // If dropped items aren't files, reject them
+                if (ev.dataTransfer.items[i].kind === 'file') {
+                    var file = ev.dataTransfer.items[i].getAsFile();
+                    console.log('... file[' + i + '].name = ' + file.name);
+                }
+            }
+        } else {
+            // Use DataTransfer interface to access the file(s)
+            for (var i = 0; i < ev.dataTransfer.files.length; i++) {
+                console.log('... file[' + i + '].name = ' + ev.dataTransfer.files[i].name);
+            }
+        }
+    }
+</script>
 
 </html>

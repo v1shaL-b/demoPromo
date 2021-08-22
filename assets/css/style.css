@@ -43,6 +43,10 @@ body {
     width: 200px;
 }
 
+hr {
+    color: #000000;
+}
+
 #drop_zone {
     border: 2px dotted gray;
     width: 500px;
