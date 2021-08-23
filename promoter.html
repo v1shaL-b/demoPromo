@@ -43,6 +43,7 @@
                 </div>
             </div>
             <br>
+            <hr>
             <div class="row justify-content-center">
                 <label for="" style="font-weight: 700;"> Vehicle Information </label>
             </div>
@@ -55,59 +56,94 @@
                 </div>
                 <div class="col-md-3">
                     <label class="label" for="">Type of Vehicle</label>
-                    <input type="text" placeholder="(Car / Bike / Suv / XUV / Sedan)">
+                    <select name="" id="">
+                        <option value="Hatchback">Hatchback</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="Saloon">Saloon</option>
+                        <option value="Bike">Bike</option>
+                        <option value="SUV">SUV</option>
+                    </select>
                 </div>
-                <div class="col-md-3">
-                    <label class="label" for="">Chassi No. / Engine No.</label>
-                    <input type="text" placeholder="Chassi no / Engine Number">
-                </div>
-                <div class="col-md-3">
-                    <label class="label" for="">Year</label>
-                    <input type="text" placeholder="Year">
-                </div>
-            </div>
-            <hr>
 
-            <div class="row">
                 <div class="col-md-3">
                     <label class="label" for="">Make</label>
                     <input type="text" placeholder="Make">
                 </div>
+
                 <div class="col-md-3">
                     <label class="label" for="">Model</label>
                     <input type="text" placeholder="Model">
                 </div>
+
+                <!-- 
+ -->
+            </div>
+            <br>
+
+            <div class="row">
                 <div class="col-md-3">
+                    <label class="label" for="">Year</label>
+                    <input type="text" placeholder="Year">
+                </div>
+
+                <div class="col-md-3">
+                    <label class="label" for="">VIN/Chassis No.</label>
+                    <input type="text" placeholder="VIN/Chassis No.">
+                </div>
+
+                <div class="col-md-3">
+                    <label class="label" for="">Engine No.</label>
+                    <input type="text" placeholder="Engine No.">
+                </div>
+
+                <div class="col-md-3">
+                    <label class="label" for="">Registration No.</label>
+                    <input type="text" placeholder="Registration No.">
+                </div>
+
+                <!-- <div class="col-md-3">
                     <label class="label" for="">Estimated Value</label>
                     <input type="text" placeholder="Estimated Value">
                 </div>
-                <div class="col-md-3">
-                    <label class="label" for="">On Road Value</label>
-                    <input type="text" placeholder="On Road Value">
-                </div>
+ -->
             </div>
             <hr>
 
             <div class="row justify-content-center">
                 <label for="" style="font-weight: 700;"> Funding Information </label>
             </div>
-
+            <hr>
             <div class="row">
                 <div class="col-md-3">
-                    <label class="label" for="">Estimated Value</label>
-                    <input type="text" placeholder="Estimated Value of Vehicle">
+                    <label class="label" for="">Invoice/Estimated Value</label>
+                    <input type="text" placeholder="Invoice Value/Estimated Value">
                 </div>
+
                 <div class="col-md-3">
-                    <label class="label" for="">Requested Loan Amt</label>
-                    <input type="text" placeholder="Requested Loan Amt">
+                    <label class="label" for="">On Road Value</label>
+                    <input type="text" id="onRoadVal" placeholder="On Road Value">
                 </div>
+
+                <div class="col-md-3">
+                    <label class="label" for="">Requested Loan Amount</label>
+                    <input type="text" id="reqLoanAmt" placeholder="Requested Loan Amount">
+                </div>
+
+                <div class="col-md-3">
+                    <label class="label" for="">Subsidy Amount</label>
+                    <input type="text" id="subAmt" placeholder="Subsidy Amount">
+                </div>
+            </div>
+            <br>
+            <div class="row">
                 <div class="col-md-3">
                     <label class="label" for="">Total Cost</label>
                     <input type="text" placeholder="Total Cost">
                 </div>
+
                 <div class="col-md-3">
-                    <label class="label" for="">Your Contribution</label>
-                    <input type="text" placeholder="Your Contribution">
+                    <label class="label" for="">Borrower Contribution</label>
+                    <input type="text" id="borrContr" placeholder="Borrower Contribution">
                 </div>
             </div>
             <hr>
@@ -115,12 +151,16 @@
             <div class="row justify-content-center">
                 <label for="" style="font-weight: 700;"> Income Information </label>
             </div>
-
+            <hr>
             <div class="row">
                 <div class="col-md-3">
                     <label class="label" for="">Income Type</label>
-                    <input type="text" placeholder="Income Type">
+                    <select class="label" name="" id="">
+                        <option value="">Salary</option>
+                        <option value="">Other</option>
+                    </select>
                 </div>
+
                 <div class="col-md-3">
                     <label class="label" for="">Gross Income</label>
                     <input type="text" placeholder="Gross Income">
@@ -129,10 +169,10 @@
                     <label class="label" for="">Net Income</label>
                     <input type="text" placeholder="Net Income">
                 </div>
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <label class="label" for="">Frequency</label>
                     <input type="text" placeholder="Frequency">
-                </div>
+                </div> -->
             </div>
             <br>
         </div>
@@ -144,5 +184,23 @@
 
 
 </body>
+
+<script>
+    let onRoadVal = document.getElementById("onRoadVal");
+    let reqLoanAmt = document.getElementById("reqLoanAmt");
+    let borrContr = document.getElementById("borrContr");
+    let subAmt = document.getElementById("subAmt");
+
+    onRoadVal.onfocus = function() {
+        getTotal();
+    };
+
+    getTotal()
+
+    {
+        onRoadVal = reqLoanAmt + subAmt + borrContr;
+        onRoadVal.innerHTML = onRoadVal;
+    }
+</script>
 
 </html>
