@@ -3923,9 +3923,9 @@ p {
     border-radius: 8px;
     position: relative;
     overflow: hidden;
-    background: -webkit-linear-gradient(#2bdbdc 0%, #0067f4 100%);
-    background: -o-linear-gradient(#2bdbdc 0%, #0067f4 100%);
-    background: linear-gradient(#2bdbdc 0%, #0067f4 100%);
+    background: -webkit-linear-gradient(#50eb508a 0%, #31be0ee1 100%);
+    background: -o-linear-gradient(#50eb508a 0%, #31be0ee1 100%);
+    background: linear-gradient(#50eb508a 0%, #31be0ee1 100%);
 }
 
 .pricing-style .pricing-icon img {
@@ -4012,7 +4012,7 @@ p {
 }
 
 .pricing-style .pricing-btn .main-btn:hover {
-    color: #0067f4;
+    color: #08f400;
     -webkit-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
     box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
