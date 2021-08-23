@@ -34,11 +34,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <img src="assets/images/basic.svg" alt="" width="200px" height="200px">
-                    <br><br>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque eaque quam ab accusantium. Porro autem velit quos.
-                    </p>
+                    <!-- <img src="assets/images/basic.svg" alt="" width="200px" height="200px"> -->
+                    <!-- <br><br> -->
+
 
                 </div>
             </div>
@@ -135,10 +133,10 @@
             </div>
             <br>
             <div class="row">
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <label class="label" for="">Total Cost</label>
                     <input type="text" placeholder="Total Cost">
-                </div>
+                </div> -->
 
                 <div class="col-md-3">
                     <label class="label" for="">Borrower Contribution</label>
@@ -231,11 +229,10 @@
                                 <td>
                                     <div>
                                         <select placeholder="Type of Expences">
-                                        <option value="household">Household</option>
-                                        <option value="school"> School Fees </option>
+                                            <option value="school"> School Fees </option>
+                                            <option value="household">Household</option>
                                         
-
-                                    </select>
+                                        </select>
                                     </div>
                                 </td>
                                 <td>
@@ -274,9 +271,9 @@
                     <thead>
                         <tr>
                             <th class="header">Type</th>
-                            <th class="header">Address/Location</th>
-                            <th class="header">Ownership </th>
-                            <th class="header">Rent Paid</th>
+                            <!-- <th class="header">Address/Location</th> -->
+                            <!-- <th class="header">Ownership </th>
+                            <th class="header">Rent Paid</th> -->
                             <th class="header">Value</th>
                             <th class="header">Action</th>
                         </tr>
@@ -286,34 +283,21 @@
                             <td>
                                 <div>
                                     <select placeholder="Select Asset Type">
-                                        <option value="Registered Office">Registered Office</option>
-                                        <option value="Admin Office ">Admin Office</option>
-                                        <option value="Retail Shop ">Retail Shop </option>
-                                        <option value="Godown/Warehouse ">Godown/Warehouse</option>
-                                        <option value="Machinery">Others</option>
+                                        <option value="fd">FD</option>
+                                        <option value="Savings Bank Account">Savings Bank Account</option>
+                                        <option value="Mutual Fund">Mutual Fund</option>
+                                        <option value="Stocks">Stocks</option>
+                                        <option value="Primary House">Primary House</option>
+                                        <option value="Second House">Second House</option>
                                     </select>
                                 </div>
                             </td>
-                            <td>
+                            <!-- <td>
                                 <div>
                                     <textarea rows="1" placeholder="Address/Location"></textarea>
                                 </div>
-                                <!-- <input [(ngModel)]="field.year" class="form-control" type="text" name="{{field.year}}" /> -->
-                            </td>
-                            <td>
-                                <div>
-                                    <select placeholder="Owned/Leased">
-                                        <option value="owned">Owned</option>
-                                        <option value="leased "> Leased</option>
-
-                                    </select>
-                                </div>
-                                <!-- <input [(ngModel)]="field.technical" class="form-control" type="text"
-                                    name="{{field.technical}}" /> -->
-                            </td>
-                            <td>
-                                <input id="imovableAttributeHouseRent1" placeholder="Rent Paid" />
-                            </td>
+                                
+                            </td> -->
                             <td>
                                 <input id="imovableAttributeHouseValue1" placeholder="Value" />
                             </td>
@@ -327,38 +311,26 @@
 
                             <td>
                                 <div>
-                                    <select fullWidth placeholder="Select Asset Type">
-                                        <option value="Registered Office">Registered Office</option>
-                                        <option value="Admin Office ">Admin Office</option>
-                                        <option value="Retail Shop ">Retail Shop </option>
-                                        <option value="Godown/Warehouse ">Godown/Warehouse</option>
-                                        <option value="Machinery">Others</option>
+                                    <select placeholder="Select Asset Type">
+                                        <option value="fd">FD</option>
+                                        <option value="Savings Bank Account">Savings Bank Account</option>
+                                        <option value="Mutual Fund">Mutual Fund</option>
+                                        <option value="Stocks">Stocks</option>
+                                        <option value="Primary House">Primary House</option>
+                                        <option value="Second House">Second House</option>
                                     </select>
                                 </div>
                             </td>
-                            <td>
+                            <!-- <td>
                                 <div>
                                     <div>
                                         <textarea rows="1" placeholder="Address/Location" name="imovableAttributeAddr"></textarea>
                                     </div>
                                 </div>
-                                <!-- <input class="form-control" type="text" id="newAttributeYear" [(ngModel)]="newAttribute.year" name="newAttributeYear" /> -->
-                            </td>
+                                
+                            </td> -->
 
-                            <td>
-                                <div>
-                                    <select placeholder="Owned/Leased">
-                                        <option value="owned">Owned</option>
-                                        <option value="leased "> Leased</option>
 
-                                    </select>
-                                </div>
-                            </td>
-                            <td>
-
-                                <input nbInput fullWidth placeholder="Rent Paid" />
-
-                            </td>
 
                             <td>
                                 <input nbInput fullWidth placeholder="Value" />
